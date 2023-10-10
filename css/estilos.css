@@ -1,0 +1,345 @@
+/* Mis clases*/
+.class-li {
+    margin-top: 32.5px;
+}
+
+.class-general-baja {
+    background-color: rgb(155, 255, 0)
+}
+
+.class-general-media {
+    background-color: rgb(0, 255, 240)
+}
+
+.class-general-alta {
+    background-color: rgb(255, 100, 0)
+}
+
+.class-fondo-amarillo {
+    background-color: yellow;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    background: linear-gradient(135deg, #FFD700, #FF4500);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.encabezado nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.encabezado nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.encabezado nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilo para la imagen de validación de CSS */
+.css-validator-image {
+    border: 0;
+    width: 88px;
+    height: 31px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+/* Mi id */
+#centered-p {
+    text-align: center
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el encabezado h2 */
+h2 {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+}
+
+/* Estilos para el encabezado h3 */
+h3 {
+    font-size: 20px;
+    color: #555;
+    text-align: left;
+    padding-left: 30px;
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las listas */
+li {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+/* Estilos para los elementos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+th, td {
+    border: 6px solid #ccc;
+    padding: 9px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 58%;
+    height: 58%;
+}
+
+/* Estilos para los fieldsets */
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Estilos para leyendas de fieldsets */
+legend {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para los elementos de formulario */
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 23%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para los elementos input class="submit" */
+input[type="submit"],
+select {
+    padding: 4px 4px;
+}
+
+/* Estilos para botones */
+button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005e99;
+}
+
+/* Estilo para el botón */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #005ea3;
+}
+
+/* No pongo nada para cuando el max-width > 1024px (pantalla de pc) se cojan los valores por default */
+
+
+/* Media Query para pantallas medianas (tablet) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Cambios en estilos para pantallas medianas */
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    body {
+        background-color: #a4aa55;
+    }
+
+    table {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+        width: 370px;
+        font-size: 13px;
+    }
+
+    input[type="submit"],
+    select {
+        font-size: 13px;
+    }
+
+    /* Estilos para el encabezado para pantallas medianas */
+    .encabezado h1 {
+        font-size: 30px;
+    }
+
+    .encabezado nav ul li a {
+        font-size: 13px;
+    }
+    
+}
+
+
+/* Media Query para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Cambios en estilos para pantallas pequeñas */
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    body {
+        background-color: #7db882;
+    }
+
+    table {
+        width: 100%;
+        font-size: 7px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    select {
+        width: 270px;
+        font-size: 11px;
+    }
+
+    input[type="submit"],
+    select {
+        font-size: 11px;
+    }
+
+    /* Estilos para el encabezado para pantallas pequeñas */
+    .encabezado h1 {
+        font-size: 25px;
+    }
+
+    .encabezado nav ul li a {
+        font-size: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <title>Manual comerciales</title>
+        <link rel="icon" href="images/icono_lupita.png">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header class="encabezado">
+            <h1>Gestión de Incidencias</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ver Incidencias Activas</a></li>
+					<li><a href="detallado_incidencias.html">Acceder a la Incidencia 001</a></li>
+					<li><a href="formulario_incidencias.html">Generar Incidencia</a></li>
+                    <li><a href="wiki_incidencias.html">Manual para Comerciales</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Documentacion para Usuarios</h2>
+        <p>
+            Este proyecto consiste en una <strong><em>plataforma web de gestión de incidencias</em></strong> que ofrece una solución integral para administrar y abordar
+            eficazmente problemas y solicitudes. La aplicación se compone de cuatro páginas navegables: una que muestra las incidencias activas,
+            otra para visualizar detalles específicos de cada incidencia, una tercera que permite el registro de nuevas incidencias a través de un
+            formulario intuitivo y, finalmente, una página de documentación que proporciona orientación y recursos para usuarios y administradores.
+            Esta aplicación brinda una interfaz amigable y eficiente para gestionar y resolver incidencias de manera organizada y eficaz.
+        </p>
+        <h3 id="indice">
+            Indice
+        </h3>
+        <ul>
+            <li><a href="#general_incidencias">Ir al apartado de "Página General de Incidencias"</a></li>
+            <li><a href="#especifica_incidencias">Ir al apartado de "Página Específica de Incidencias"</a></li>
+            <li><a href="#formulario_incidencias">Ir al apartado de "Formulario para Generar una Incidencia"</a></li>
+        </ul>
+        <fieldset>
+            <legend><h2 id="general_incidencias">Página General de Incidencias</h2></legend>
+            <p>La página general de incidencias es la página principal donde los usuarios pueden ver una tabla de todas las incidencias activas. A continuación se describen los elementos clave de esta página:</p>
+            <ol>
+                <li>
+                    Tabla de Incidencias Activas:
+                    <ul>
+                        <li>Id de Incidencia</li>
+                        <li>Fecha de Apertura</li>
+                        <li>Prioridad de la Incidencia</li>
+                        <li>Tipo de Incidencia</li>
+                        <li>Departamentos Implicados</li>
+                        <li>Id del Técnico Asignado</li>
+                        <li>Opción para "Resolver Incidencia"</li>
+                        <li>Opción para "Acceder a la Incidencia"</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Acceder a la Incidencia:
+                    <ul>
+                        <li>Para ver los detalles de una incidencia en particular, los usuarios deben hacer clic en "Acceder a la Incidencia". Esto los llevará a la página específica de esa incidencia.</li>
+                    </ul>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend><h2 id="especifica_incidencias">Página Específica de Incidencias</h2></legend>
+            <p>La página específica de incidencias permite a los usuarios ver los detalles completos de una incidencia en particular. Aquí están los componentes clave de esta página:</p>
+            <ol>
+                <li>
+                    Detalles Básicos de la Incidencia:
+                    <ul>
+                        <li>Id de Incidencia</li>
+                        <li>Fecha de Apertura</li>
+                        <li>Prioridad de la Incidencia</li>
+                        <li>Tipo de Incidencia</li>
+                        <li>Departamentos Implicados</li>
+                        <li>Id del Técnico Asignado</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Detalles Avanzados de la Incidencia:
+                    <ul>
+                        <li>En esta zona, los usuarios pueden ver una descripción detallada de la incidencia que proporciona información adicional sobre el problema.</li>
+                    </ul>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend><h2 id="formulario_incidencias">Formulario para Generar una Incidencia</h2></legend>
+            <p>El formulario para generar una incidencia es donde los usuarios pueden agregar nuevas incidencias al sistema. A continuación, se detallan los campos que deben completar:</p>
+            <ol>
+                <li>
+                    Fecha de Apertura:
+                    <ul>
+                        <li>Los usuarios deben seleccionar o ingresar la fecha y hora en que se abre la incidencia.</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Descripción Corta:
+                    <ul>
+                        <li>Aquí deben proporcionar una breve descripción del problema o incidencia.</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Departamentos Implicados:
+                    <ul>
+                        <li>Selecciona los departamentos involucrados en la incidencia.</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Tipo de Incidencia:
+                    <ul>
+                        <li>Los usuarios deben indicar el tipo de incidencia. Algunas opciones son "Hardware", "Software", "Problemas de Red" o "Seguridad informatica".</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Prioridad de la Incidencia:
+                    <ul>
+                        <li>Los usuarios deben especificar la prioridad de la incidencia. Las opciones son "Crítica", "Alta", "Media", "Baja", "Muy Baja/Nula".</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Id del Técnico Asignado:
+                    <ul>
+                        <li>Si se asigna un técnico específico a la incidencia, debe ingresarse su ID.</li>
+                    </ul>
+                </li>
+                <li class="class-li">
+                    Credenciales del Usuario:
+                    <ul>
+                        <li>Los usuarios deben proporcionar las credenciales necesarias para verificar su identidad o autorización para informar sobre la incidencia.</li>
+                    </ul>
+                </li>
+            </ol>
+        </fieldset>
+    <footer>
+        <p>
+            E1 - Prototipo web simple - Aitor Artero
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img class="css-validator-image" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+            </a>
+        </p>
+    </footer>
+    </body>
+</html>

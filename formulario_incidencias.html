@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario incidencia</title>
+        <link rel="icon" href="images/icono_incidencias.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header class="encabezado">
+            <h1>Gestión de Incidencias</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ver Incidencias Activas</a></li>
+					<li><a href="detallado_incidencias.html">Acceder a la Incidencia 001</a></li>
+					<li><a href="formulario_incidencias.html">Generar Incidencia</a></li>
+                    <li><a href="wiki_incidencias.html">Manual para Comerciales</a></li>
+                </ul>
+            </nav>
+        </header>
+		<h2>Formulario para Generar Incidencias</h2>
+		<form action="server.php" method="get">
+			<fieldset>
+				<legend>Alta de incidencia</legend>
+                <p>Fecha y hora:</p>
+                <input type="date" name="fecha" id="id-fecha">
+				<input type="time" name="hora" id="id-hora">
+				<br>
+                <p>Descripcion corta:</p>
+                <textarea name="descripcion" rows="4" cols="35" placeholder="Haz click para escribir"></textarea>
+                <br>
+				<input type="submit" name="adjuntar_archivo" value="Adjuntar archivo">
+				<br>
+				<p>Selecciona el departamento al que pertenezcas:</p>
+				<input type="radio" id="ciber" name="dep" value="0" checked>
+				<label for="ciber">Ciberseguridad </label> 
+				<input type="radio" id="teleco" name="dep" value="1">
+				<label for="teleco">Telecomunicaciones </label>
+                <input type="radio" id="otro" name="dep" value="2">
+				<label for="otro">Otro </label>
+                <br><br>
+                <label for="tipo_incidencia">Tipo de la incidencia: </label>
+				<select id="tipo_incidencia" name="Tipo de incidencia">
+                    <option selected disabled>Selecciona el tipo de incidencia</option>
+                    <option>Hardware</option>
+ 					<option>Software</option>
+                    <option>Problemas de red</option>
+                    <option>Seguridad informática</option>
+ 					<option>Acceso y autenticación</option>
+                    <option>Base de datos</option>
+                    <option>Virtualización</option>
+                    <option>Copia de seguridad y recuperación</option>
+                    <option>Rutinaria</option>
+				</select>
+                <br><br>
+                <label for="prioridad_incidencia">Prioridad de la incidencia: </label>
+				<select id="prioridad_incidencia" name="Prioridad de incidencia">
+                    <option selected disabled>Selecciona la prioridad de la incidencia</option>
+                    <option>Critica</option>
+ 					<option>Alta</option>
+                    <option>Media</option>
+ 					<option>Baja</option>
+                    <option>Muy baja/Nula</option>
+				</select>
+                <br><br>
+				<label for="id_tecnico">Id del técnico asignado: </label>
+				<input type="text" name="id_tecnico" id="id_tecnico" placeholder="ej: 1234">
+                <br><br>
+                <label for="id-password">Credenciales del usuario: </label>
+				<input type="password" name="password" id="id-password" placeholder="XXXX-XXXX-XXXX">
+			</fieldset>
+			<br>
+			<input type="checkbox" name="condiciones" id="id-condiciones" value="1">
+			<label for="id-condiciones">Acepto los términos y condiciones</label>
+			<br><br>
+			<input type="submit"  name="enviar" value="REPORTAR INCIDENCIA">
+		</form>
+	<br>
+	<footer>
+        <p>
+            E1 - Prototipo web simple - Aitor Artero
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img class="css-validator-image" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+            </a>
+        </p>
+    </footer>
+	</body>
+</html>

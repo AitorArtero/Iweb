@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Incidencias activas</title>
+        <link rel="icon" href="images/icono_lista_incidencias.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header class="encabezado">
+            <h1>Gestión de Incidencias</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ver Incidencias Activas</a></li>
+					<li><a href="detallado_incidencias.html">Acceder a la Incidencia 001</a></li>
+					<li><a href="formulario_incidencias.html">Generar Incidencia</a></li>
+                    <li><a href="wiki_incidencias.html">Manual para Comerciales</a></li>
+                </ul>
+            </nav>
+        </header>
+		<h2 id="titulo_incidencias">Incidencias Activas</h2>
+		<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Id incidencia</th>
+					<th>Fecha de apertura</th>
+					<th>Prioridad incidencia</th>
+					<th>Tipo incidencia</th>
+					<th>Departamentos implicados</th>
+					<th>Id del técnico asignado</th>
+					<th>Resolver incidencia</th>
+					<th>Acceder a la incidencia</th>
+				</tr>				
+			</thead>
+			<tbody>
+				<tr class="class-general-media">
+					<td>001</td><td>21/09/2023 13:45</td><td>Media</td><td>Problemas de red</td><td>Telecomunicaciones</td><td>102</td><td><input type="submit" name="cerrar_incidencia_001" value="Resolver incidencia"></td><td><a href="detallado_incidencias.html"> Acceder a la incidencia 001</a></td>
+				</tr>
+				<tr class="class-general-baja">
+					<td>002</td><td>21/09/2023 18:31</td><td>Baja</td><td>Base de datos</td><td>Otro</td><td>201</td><td><input type="submit" name="cerrar_incidencia_002" value="Resolver incidencia"></td><td><a href="general_incidencias.html">$$$$$$$$$$$$$$$$</a></td>
+				</tr>
+				<tr class="class-general-baja">
+					<td>003</td><td>21/09/2023 18:47</td><td>Baja</td><td>Software</td><td>Telecomunicaciones</td><td>108</td><td><input type="submit" name="cerrar_incidencia_003" value="Resolver incidencia"></td><td><a href="general_incidencias.html">$$$$$$$$$$$$$$$$</a></td>
+				</tr>
+				<tr class="class-general-alta">
+					<td>004</td><td>22/09/2023 00:05</td><td>Alta</td><td>Copia de seguridad y recuperación</td><td>Ciberseguridad</td><td>013</td><td><input type="submit" name="cerrar_incidencia_004" value="Resolver incidencia"></td><td><a href="general_incidencias.html">$$$$$$$$$$$$$$$$</a></td>
+				</tr>
+				<tr class="class-general-media">
+					<td>005</td><td>22/09/2023 03:52</td><td>Media</td><td>Problemas de red</td><td>Telecomunicaciones</td><td>102</td><td><input type="submit" name="cerrar_incidencia_005" value="Resolver incidencia"></td><td><a href="general_incidencias.html">$$$$$$$$$$$$$$$$</a></td>
+				</tr>				
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Incidencias activas: 5</td><td>Fecha y hora de cuando se dieron de alta las incidencias</td><td>Máximo nivel de prioridad: Alta</td><td>Tipos de incidencias activas: 4</td><td>Departamentos implicados: 3</td><td>Técnicos operando: 4</td><td>Haz click para finalizar la incidencia</td><td>Haz click para acceder a la incidencia</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<br>
+	<footer>
+        <p>
+            E1 - Prototipo web simple - Aitor Artero
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img class="css-validator-image" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+            </a>
+        </p>
+    </footer>
+    </body>
+</html>

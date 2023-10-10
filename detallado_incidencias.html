@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Incidencia 001</title>
+        <link rel="icon" href="images/icono_lista_incidencias.png">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <h1>Gestión de Incidencias</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ver Incidencias Activas</a></li>
+					<li><a href="detallado_incidencias.html">Acceder a la Incidencia 001</a></li>
+					<li><a href="formulario_incidencias.html">Generar Incidencia</a></li>
+                    <li><a href="wiki_incidencias.html">Manual para Comerciales</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2 id="titulo_detallado_incidencias">Incidencia 001</h2>
+        <fieldset>
+            <legend>Detalles básicos</legend>
+            Fecha y hora:
+            <input disabled type="date" name="fecha" id="id-fecha" value="2023-09-21">
+            <input disabled type="time" name="hora" id="id-hora" value="13:45">
+            <br><br>
+            <label for="depto">Departamento: </label>
+            <input disabled type="text" name="depto" id="depto" placeholder="Telecomunicaciones">
+            <br><br>
+            <label for="tipo_incidencia">Tipo de la incidencia: </label>
+            <input disabled type="text" name="tipo_incidencia" id="tipo_incidencia" placeholder="Problemas de red">
+            <br><br>
+            <label for="prioridad_incidencia">Prioridad de la incidencia: </label>
+            <input disabled type="text" name="prioridad_incidencia" id="prioridad_incidencia" placeholder="Media">
+            <br><br>
+            <label for="id_tecnico">Id del técnico asignado: </label>
+            <input disabled type="text" name="id_tecnico" id="id_tecnico" placeholder="102">
+            <br><br>
+            <label for="id-password">Credenciales del creador de la incidencia: </label>
+            <input disabled type="text" name="id_password" id="id-password" placeholder="0362-9746-7123">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Detalles avanzados</legend>
+            <img id="imagen_grafico" src="images/grafica_red.png" alt="Grafico que muestra un fallo en la red">
+            <h2>Descripcion detallada de la incidencia:</h2>
+            <p id="centered-p">
+                El pico repentino en el tráfico de red, <strong><span class="class-fondo-amarillo">
+                específicamente en las métricas de Traffic Out y Traffic Total, a las 13:45 se debe con certeza a un
+                fenómeno conocido como un ataque DDoS</span></strong>
+                (Distributed Denial of Service o Ataque Distribuido de Denegación de Servicio).
+                En este caso, es evidente que se ha producido un ataque DDoS dirigido hacia el sistema
+                en cuestión.
+                <br><br>
+                El ataque DDoS implica que un gran número de dispositivos, a menudo comprometidos o parte
+                de una botnet, envían una avalancha de solicitudes al servidor objetivo, abrumándolo y
+                sobrecargando su capacidad de red. El resultado es un aumento drástico en el tráfico de salida
+                y, por ende, en el tráfico total. Esta táctica busca interrumpir los servicios y causar una
+            denegación de servicio a los usuarios legítimos.
+                <br><br>
+                El repunte en el tráfico In también podría deberse a que los atacantes intentaron saturar
+                todas las vías de comunicación disponibles. Sin embargo, dado que los valores de Traffic In
+                aumentaron solo ligeramente en comparación con Traffic Out y Traffic Total,
+                <strong><span class="class-fondo-amarillo">es probable que la mayor parte del ataque estuviera
+                orientada hacia la salida del servidor.</span></strong>
+                <br><br>
+                Es importante abordar este problema de seguridad implementando medidas de mitigación de DDoS,
+                como firewalls y sistemas de detección de intrusiones, para proteger la infraestructura de red
+                y garantizar un servicio ininterrumpido.
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" name="resolver_incidencia" value="RESOLVER INCIDENCIA">
+        <br><br>
+    <footer>
+        <p>
+            E1 - Prototipo web simple - Aitor Artero
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img class="css-validator-image" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+            </a>
+        </p>
+    </footer>
+    </body>
+
+</html>
